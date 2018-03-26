@@ -14,6 +14,6 @@ public class JianShuModel {
                 onHttpResultListener.onResult(result);
             }
         });
-        httpTask.execute("http://www.jianshu.com/u/"+word);
+        httpTask.execute("https://www.jianshu.com/u/" + word);
     }
 }
