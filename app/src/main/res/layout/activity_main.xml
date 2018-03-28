@@ -7,9 +7,22 @@
     android:orientation="vertical"
     tools:context="com.asura.mvp_study.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btn_mvp1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+        android:text="MVP1"/>
+
+    <Button
+        android:id="@+id/btn_mvp2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MVP2"/>
+
+    <Button
+        android:id="@+id/btn_mvp3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MVP3"/>
 
 </LinearLayout>
