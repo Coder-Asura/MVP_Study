@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 /**
  * @author Created by Asura on 2017/10/23 15:23.
  */
-public abstract class BaseMvpActivity<V extends BaseMvpView, P extends BaseMvpPresenter> extends AppCompatActivity implements BaseMvpView {
+public abstract class BaseMvpActivity<V extends BaseMvpView, P extends BaseMvpPresenter<V>> extends AppCompatActivity implements BaseMvpView {
     private P mPresenter;
 
     public P getPresenter() {
@@ -28,7 +28,7 @@ public abstract class BaseMvpActivity<V extends BaseMvpView, P extends BaseMvpPr
             mPresenter = createPresenter();
         }
         if (mPresenter != null) {
-            mPresenter.attachView(this);
+            mPresenter.attachView((V) this);
         }
     }
 

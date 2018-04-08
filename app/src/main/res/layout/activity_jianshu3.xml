@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingBottom="20dp"
+              android:paddingTop="20dp"
+              tools:context=".mvp3.jianshu.JianShuActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="getJianShuData"
+        android:text="获取简书主页"/>
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.asura.mvp_study.mvp2.jianshu.JianShuFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"/>
+
+    <com.asura.mvp_study.mvp2.jianshu.JianShuButton
+        android:id="@+id/jsbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="MvpButton调用"/>
+</LinearLayout>

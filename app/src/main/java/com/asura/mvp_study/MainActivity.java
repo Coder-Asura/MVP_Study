@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent.setClass(MainActivity.this, com.asura.mvp_study.mvp2.jianshu.JianShuActivity.class);
                 break;
             case R.id.btn_mvp3:
+                intent.setClass(MainActivity.this, com.asura.mvp_study.mvp3.jianshu.JianShuActivity.class);
                 break;
             default:
         }
